@@ -1,0 +1,19 @@
+To use this Phone AUTH in android , we'll need these essential parts to move forward.
+
+Note: Make sure there is ( google-services.json ) is in your root project folder -> android/app.
+
+#1: Set-Up your android : 1. Check this doc first. URL: https://rnfirebase.io/ , 2. make sure your Package Name of android is undoubtedly right.
+
+#2: After setting up your android -> 1. Read this doc to continue with firebase phone auth. URL: https://rnfirebase.io/auth/phone-auth , 2. After that one check this. URL: https://firebase.google.com/docs/auth/android/phone-auth#enable-phone-number-sign-in-for-your-firebase-project
+
+#3: If you have finished first step -> 1. move onto 2nd step: Enable Android Device Verification. URL: https://console.cloud.google.com/apis/library/androidcheck.googleapis.com?project=android-otp-e49e4 , 2. After that add a fingerprint to your project. URL: https://firebase.google.com/
+
+#4: Add a fingerprint to your current project. -> 1. Go to Console , 2. Go to your current project , 3. Tap on settings icon which is close to Project Overview on top. , 4. Tap on Project settings , 5. In general by default scroll down to see Add fingerprint section. , 6. Tap on that Add fingerprint to insert your SHA256 fingerprint.
+
+#5 Add SHA256 of your current project to your firebase -> 1. In your current project folder follow these commands. , 2. cd android/app , 3. in android/app folder, paste this one -> keytool -list -v -keystore debug.keystore -alias androiddebugkey -storepass android -keypass android , 4. After that copy the fingerprints of SHA256. , 5. Lastly paste your copied fingerprints back to your firebase project settings.
+
+#6 And done thx for reading this document :D
+
+
+Documented by Kali-Linux
+
