@@ -9,6 +9,8 @@ const App = () => {
   const [confirm, setConfirm] = useState<any | null>(null);
   const [code, setCode] = useState<string>('');
 
+  //Amka was here before
+
   const onAuthStateChanged = (user: any) => {
     setUser(user);
     if (initializing) setInitializing(false);
